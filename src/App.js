@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { Widget, addResponseMessage } from "react-chat-widget";
+import "react-chat-widget/lib/styles.css";
+require("dotenv/config");
+const axios = require("axios");
+const CHATBOT_URL = "https://torugo-chatbot.herokuapp.com/api/v1/mensagem";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  handleNewUserMessage = async message => {
+    const resposta = await axios.post(CHATBOT_URL, { message });
+    addResponseMessage(resposta.data.text);
+  };
+
+  render() {
+    return (
+      <div className="App">
+        <Widget handleNewUserMessage={this.handleNewUserMessage} title="Torugo's Chatbot" subtitle="" />
+      </div>
+    );
+  }
 }
 
 export default App;
