@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.rcw-conversation-container > .rcw-header {
+  background-color: #16161c;
+}
+
+.rcw-message > .rcw-response {
+  background-color: #16161c;
+  color: white;
+}
+
+@media all {
+  .rcw-conversation-container .rcw-close-button {
+    background-color: #16161c;
+  }
+}
+
+.rcw-client {
+  background-color: #53535a;
+  color: white;
+}
+
+.rcw-launcher {
+  background-color: #16161c;
+}
