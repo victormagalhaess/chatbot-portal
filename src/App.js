@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { Widget, addResponseMessage } from "react-chat-widget";
 import "react-chat-widget/lib/styles.css";
+import "./App.css";
+import sendUserDataToChatbot from "./actions/chatbotComunicationAction";
 require("dotenv/config");
-const axios = require("axios");
 
 class App extends Component {
   handleNewUserMessage = async message => {
-    console.log(process.env.REACT_APP_CHATBOT_URL);
-    const resposta = await axios.post(process.env.REACT_APP_CHATBOT_URL, { message });
-    addResponseMessage(resposta.data.text);
+    const responseChatbot = await sendUserDataToChatbot(message);
+    addResponseMessage(responseChatbot.data.text);
   };
 
   render() {
