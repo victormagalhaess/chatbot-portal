@@ -3,6 +3,7 @@ import { Widget, addResponseMessage } from "react-chat-widget";
 import "react-chat-widget/lib/styles.css";
 import "./App.css";
 import sendUserDataToChatbot from "./actions/chatbotComunicationAction";
+import profilePic from "./img/pp.jpg";
 require("dotenv/config");
 
 class App extends Component {
@@ -11,13 +12,26 @@ class App extends Component {
     addResponseMessage(responseChatbot.data.text);
   };
 
-  render() {
+  componentDidMount = () => {
+    const initialMessage = "Olá, tudo bem? Sou um bot feito para dar informações sobre meu criador!";
+    const suggestionMessage = `Para começar, me pergunte "O que eu posso perguntar?"`;
+    addResponseMessage(initialMessage);
+    addResponseMessage(suggestionMessage);
+  };
+
+  render = () => {
     return (
       <div className="App">
-        <Widget handleNewUserMessage={this.handleNewUserMessage} title="Torugo's Chatbot" subtitle="" />
+        <Widget
+          handleNewUserMessage={this.handleNewUserMessage}
+          title="Victor's Chatbot"
+          subtitle=""
+          profileAvatar={profilePic}
+          senderPlaceHolder="Digite uma mensagem..."
+        />
       </div>
     );
-  }
+  };
 }
 
 export default App;
