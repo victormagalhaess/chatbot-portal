@@ -1,7 +1,6 @@
 ## Curriculum Chatbot ~
 
-![chatbot](https://image.freepik.com/vetores-gratis/robo-sorridente-fofo-chat-bot-e-sinais-de-comunicacao-ilustracao-de-personagem-de-desenho-animado-plana-moderna-isolado-no-branco-falar-bolha-bot-de-bate-papo-de-comunicacao-de-servico-de-apoio-de-voz_92289-518.jpg)
-<img src="https://image.freepik.com/vetores-gratis/robo-sorridente-fofo-chat-bot-e-sinais-de-comunicacao-ilustracao-de-personagem-de-desenho-animado-plana-moderna-isolado-no-branco-falar-bolha-bot-de-bate-papo-de-comunicacao-de-servico-de-apoio-de-voz_92289-518.jpg" width="40%">
+<img src="https://image.freepik.com/vetores-gratis/robo-sorridente-fofo-chat-bot-e-sinais-de-comunicacao-ilustracao-de-personagem-de-desenho-animado-plana-moderna-isolado-no-branco-falar-bolha-bot-de-bate-papo-de-comunicacao-de-servico-de-apoio-de-voz_92289-518.jpg" width="20%">
 
 ### O que é?
 
