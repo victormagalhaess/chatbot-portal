@@ -1,6 +1,7 @@
 ## Curriculum Chatbot ~
 
-<img src="https://freesvg.org/img/1538298822.png" width="100">
+![chatbot](https://freesvg.org/img/1538298822.png)
+<img src="https://freesvg.org/img/1538298822.png" width="40%">
 
 ### O que é?
 
