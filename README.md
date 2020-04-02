@@ -14,3 +14,5 @@ O funcionamento desse projeto depende de outras 2 coisas: <br>
 - Backend intermediário entre o portal e o serviço da ibm ([disponível aqui](https://github.com/victormagalhaess/chatbot))
 
 * IBM Watson treinado, (um bom tutorial se encontra [disponível aqui](https://www.ibm.com/developerworks/br/library/desenvolvendo-chatbots-com-watson-conversation/index.html))
+
+Many Thanks to / Muito Obrigado à / Muchas Gracias a [Martín Callegari](https://github.com/mcallegari10)
